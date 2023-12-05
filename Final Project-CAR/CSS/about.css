@@ -1,0 +1,170 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a basic font to the whole page */
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header {
+    font-family: "Libre Franklin";
+    background: transparent;
+    text-align: center;
+    padding-top: 3px;
+    justify-content: center;
+    height: 17vh;
+    font-size: 50px;
+    position: relative; /* Ensure proper positioning for absolute elements */
+}
+
+header #mainimg{
+    height:80vh;
+}
+.navbar {
+    display: flex;
+    margin-top: 10px;
+}
+
+.logo-container {
+    position: absolute;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    margin-left: 85vh;
+    top: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar a {
+    margin: 20px;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.navbar a:hover {
+    text-decoration: underline 2px solid #ffffff;
+    transition: .5s;
+}
+
+header > div > a > img {
+    display: flex;
+    margin: 10px;
+}
+
+img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.header-content {
+    z-index: 1; /* Place the content above the video */
+    color: #ffffff; /* Set text color to white */
+    position: absolute; /* Position the content absolutely within the header */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the content perfectly */
+    text-align: center; /* Center text within the container */
+    width: 80%; /* Adjusted to fill 80% of the container width */
+    margin: auto; /* Center the content from left and right */
+}           
+.main_container {
+    padding: 50px;
+    margin-top: 30%;
+}
+
+.about-list {
+    padding: 0;
+    margin: 0;
+}
+
+.about-list li {
+    margin-bottom: 20px;
+    position: relative;
+}
+.about-list li::before {
+    content: '>';
+    color: #000000; /* Set color as needed */
+    font-size: 20px;
+    position: absolute;
+    left: -20px;
+}
+
+.main_container .about-list h2 {
+    font-family: "Aldrich",sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-list p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+.about-list li:hover h2,
+.about-list li:hover p {
+    color: #d5001c; /* Change to the desired color */
+    transition: color 0.2s ease; /* Add a smooth transition effect */
+    transform: scale(1.01);
+}
+/*Style for footer*/
+footer {
+    margin: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    flex: 1;
+} 
+
+.footer-menu h4 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0 ;
+}
+
+.footer-menu li {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.footer-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.footer-menu a:hover {
+    text-decoration: dotted underline;
+}
+
+footer p{
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+}

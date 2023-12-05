@@ -1,0 +1,229 @@
+body, h1, h2, h3, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a basic font to the whole page */
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+h1,h2{
+    margin: 12px;
+    font-family: 'Aldrich';
+}
+
+header {
+    display: flex;
+    align-content: center;
+    font-family: "Libre Franklin";
+    background: black;
+    text-align: center;
+    justify-content: center;
+    height: 17vh;
+    font-size: 50px;
+    position: relative; /* Ensure proper positioning for absolute elements */
+}
+
+.navbar {
+    display: flex;
+    margin-top: 10px;
+}
+
+.logo-container {
+    position: absolute;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    margin-left: 58vh;
+    top: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar a {
+    margin: 20px;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.navbar a:hover {
+    text-decoration: underline 2px solid #ffffff;
+    transition: .5s;
+}
+
+header > div > a > img {
+    display: flex;
+    margin: 10px;
+}
+
+.header-content {
+    display: flex;
+    z-index: 1; /* Place the content above the video */
+    color: #ffffff; /* Set text color to white */
+    text-align: center; /* Center text within the container */
+    width: auto; 
+}
+main{
+    padding: 25px; /* Add padding to the main content area */
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between; /* Adjust as needed */
+    margin-left: 10%;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+main img {
+    width: 36%; /* Full width for one image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px;
+}
+main .big-img:hover{
+    transform: scale(1.1);
+}
+main .small-img {
+    width: 32%;
+    margin-bottom: 20px; /* Add some space between images */
+}
+main .small-img :hover{
+    transform: scale(1.1);
+}
+.details ul,
+.equipment ul{
+    display: flex;
+}
+.details ul div,
+.details ul div li, .equipment ul div, .equipment ul div li{
+    margin: 15px;
+}
+
+/* Pricing and Contact Information */
+.pricing-contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pricing-contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pricing-contact p {
+    margin-bottom: 8px;
+}
+
+.buttons button,
+.save-compare button {
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Save and Compare Buttons */
+.save-compare {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Dealer Information */
+.dealer-info {
+    margin-top: 20px;
+}
+
+.dealer-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dealer-info p {
+    margin-bottom: 8px;
+}
+
+/* Vehicle Details */
+.vehicle-details {
+    margin-top: 20px;
+}
+
+.vehicle-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.vehicle-details p {
+    margin-bottom: 8px;
+}
+.details,
+.equipment,
+.pricing-contact,
+.dealer-info,
+.vehicle-details {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #ccc;
+}
+/*Style for footer*/
+footer {
+    margin: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    flex: 1;
+} 
+
+.footer-menu h4 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0 ;
+}
+
+.footer-menu li {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.footer-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.footer-menu a:hover {
+    text-decoration:  dotted underline;
+}
+
+footer p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}

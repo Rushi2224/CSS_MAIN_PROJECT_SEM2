@@ -1,0 +1,282 @@
+header{
+    font-family: "Libre Franklin";
+    background: transparent;
+    text-align: center;
+    padding-top: 3px;
+    justify-content: center;
+    height: 17vh;
+    margin-left: 12vh;
+    font-size: 50px;
+}
+.navbar{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 100px; 
+}
+.logo-container {
+    position: absolute;
+    z-index: 2;
+}
+.logo {
+    display: flex;
+    margin-left: 85vh;
+    top: 5px;
+}
+
+ul{
+    list-style: none;
+}
+.navbar a{
+    margin: 20px;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    z-index: 1;
+}
+.navbar a:hover{
+    text-decoration: underline 2px solid #ffffff;
+    transition: .5s;
+}
+header > div > a > img {
+    display: flex;
+    margin-left: 10px;
+    margin: 10px;
+}
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjusted to fill the entire viewport width */
+    height: 100%; /* Adjusted to fill the entire viewport height */
+    object-fit: cover; /* Ensures the video maintains its aspect ratio and covers the entire container */
+    z-index: -1; /* Place the video behind other content */
+}
+.header-content {
+    z-index: 1; /* Place the content above the video */
+}
+.header-content h1{
+    color: #ffffff;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    font-size: 80px;
+    width: 30%;
+    font-weight: 100;
+    text-align: left;
+    margin-top: 150px;
+}
+.header-content .button {
+    position: absolute;
+    top: 85%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-content .discover {
+    padding: 13px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 2px #ffffff;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.header-content .discover:hover{
+   border-color:transparent ;
+   transition: .5s;
+   background-color: rgba(251, 252, 255, 0.6);
+}
+main{
+    margin-top: 40rem;
+}
+.card-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px; /* Adjust margin for space at the border of the screen */
+}
+
+.card {
+    flex: 1;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0px 50px; /* Add margin for space between cards */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adjust this value as needed */
+    margin-bottom: 10px;
+}
+
+.h3 {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.models {
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.models h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.model-card {
+    position: relative; /* Add this line */
+    display: inline-block;
+    margin: 10px 10px; /* Adjust margin as needed */
+    width: 500px; /* Adjust width as needed */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.model-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Adjust border-radius as needed */
+    z-index: 1;
+}
+.model-card img:hover{
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transition: transform 0.5s ; /* Add a smooth transition effect */
+}
+.button {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.model-name {
+    font-family: "Mr Dafoe", sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 7%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.model-name:hover{
+    color: #000000;
+}
+
+.discover {
+    background-color: transparent;
+    color: #ffffff;
+    border: solid #ffffff;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+}
+.build {
+    background-color: white;
+    color: black;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+}
+.builds {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+.builds:hover{
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+.preowned{
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 55px;
+}
+.preowned img{
+    width: 50rem;
+    height: auto;
+}
+footer {
+    margin: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    flex: 1;
+} 
+
+.footer-menu h4 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0 ;
+}
+
+.footer-menu li {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.footer-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.footer-menu a:hover {
+    text-decoration: dotted underline;
+}
+
+footer p{
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+}
